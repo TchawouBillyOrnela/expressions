@@ -265,7 +265,7 @@ func subchiffre (lhs: Term, rhs: Term, result: Term) -> Goal {
     (lhs === d6 && rhs === d2 && result === d5) ||
     (lhs === d7 && rhs === d1 && result === d6) ||
     (lhs === d8 && rhs === d1 && result === d7) ||
-    (lhs === d9 && rhs === d1 && result === d8) 
+    (lhs === d9 && rhs === d1 && result === d8)
 
 }
 
@@ -349,10 +349,15 @@ func evalArithmetic (input: Term, output: Term) -> Goal {
       let r  = g ["r"]
       let lv = g ["lv"]
       let rv = g ["rv"]
-        return input === add (l, r) &&
-        reverse (list: l, reversed: lv) && reverse (list: r, reversed: rv) &&
-        addnbr (lhs: lv, rhs: rv, result: output)
+        return
+          (input === add (l, r) &&
+          reverse (list: l, reversed: lv) && reverse (list: r, reversed: rv) &&
+          addnbr (lhs: lv, rhs: rv, result: output)) ||
+          (input === multiply(l, r) &&
+           mult(lhs: l, rhs: r, result: output))
+
       })
+
   //return freshn {t in
   //let reserved_lhs = t ["reserved_lhs"]
   //let reserved_rhs = t ["reserved_rhs"]
