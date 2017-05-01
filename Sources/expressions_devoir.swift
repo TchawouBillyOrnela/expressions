@@ -235,6 +235,7 @@ func addchiffre (lhs: Term, rhs: Term, result: Term, rest: Term) -> Goal {
     (lhs === d1 && rhs === d7 && result === d8 && rest === d0) ||
     (lhs === d1 && rhs === d8 && result === d9 && rest === d0) ||
     (lhs === d1 && rhs === d9 && result === d0 && rest === d1) ||
+
     (lhs === d2 && rhs === d1 && result === d3 && rest === d0) ||
     (lhs === d2 && rhs === d2 && result === d4 && rest === d0) ||
     (lhs === d2 && rhs === d3 && result === d5 && rest === d0) ||
@@ -243,31 +244,81 @@ func addchiffre (lhs: Term, rhs: Term, result: Term, rest: Term) -> Goal {
     (lhs === d2 && rhs === d6 && result === d8 && rest === d0) ||
     (lhs === d2 && rhs === d7 && result === d9 && rest === d0) ||
     (lhs === d2 && rhs === d8 && result === d0 && rest === d1) ||
-    (lhs === d2 && rhs === d9 && result === d1 && rest === d1)
+    (lhs === d2 && rhs === d9 && result === d1 && rest === d1) ||
+
+    (lhs === d3 && rhs === d1 && result === d4 && rest === d0) ||
+    (lhs === d3 && rhs === d2 && result === d5 && rest === d0) ||
+    (lhs === d3 && rhs === d3 && result === d6 && rest === d0) ||
+    (lhs === d3 && rhs === d4 && result === d7 && rest === d0) ||
+    (lhs === d3 && rhs === d5 && result === d8 && rest === d0) ||
+    (lhs === d3 && rhs === d6 && result === d9 && rest === d0) ||
+    (lhs === d3 && rhs === d7 && result === d0 && rest === d1) ||
+    (lhs === d3 && rhs === d8 && result === d1 && rest === d1) ||
+    (lhs === d3 && rhs === d9 && result === d2 && rest === d1) ||
+
+    (lhs === d4 && rhs === d1 && result === d5 && rest === d0) ||
+    (lhs === d4 && rhs === d2 && result === d6 && rest === d0) ||
+    (lhs === d4 && rhs === d3 && result === d7 && rest === d0) ||
+    (lhs === d4 && rhs === d4 && result === d8 && rest === d0) ||
+    (lhs === d4 && rhs === d5 && result === d9 && rest === d0) ||
+    (lhs === d4 && rhs === d6 && result === d0 && rest === d1) ||
+    (lhs === d4 && rhs === d7 && result === d1 && rest === d1) ||
+    (lhs === d4 && rhs === d8 && result === d2 && rest === d1) ||
+    (lhs === d4 && rhs === d9 && result === d3 && rest === d1) ||
+
+    (lhs === d5 && rhs === d1 && result === d6 && rest === d0) ||
+    (lhs === d5 && rhs === d2 && result === d7 && rest === d0) ||
+    (lhs === d5 && rhs === d3 && result === d8 && rest === d0) ||
+    (lhs === d5 && rhs === d4 && result === d9 && rest === d0) ||
+    (lhs === d5 && rhs === d5 && result === d0 && rest === d1) ||
+    (lhs === d5 && rhs === d6 && result === d1 && rest === d1) ||
+    (lhs === d5 && rhs === d7 && result === d2 && rest === d1) ||
+    (lhs === d5 && rhs === d8 && result === d3 && rest === d1) ||
+    (lhs === d5 && rhs === d9 && result === d4 && rest === d1) ||
+
+    (lhs === d6 && rhs === d1 && result === d7 && rest === d0) ||
+    (lhs === d6 && rhs === d2 && result === d8 && rest === d0) ||
+    (lhs === d6 && rhs === d3 && result === d9 && rest === d0) ||
+    (lhs === d6 && rhs === d4 && result === d0 && rest === d1) ||
+    (lhs === d6 && rhs === d5 && result === d1 && rest === d1) ||
+    (lhs === d6 && rhs === d6 && result === d2 && rest === d1) ||
+    (lhs === d6 && rhs === d7 && result === d3 && rest === d1) ||
+    (lhs === d6 && rhs === d8 && result === d4 && rest === d1) ||
+    (lhs === d6 && rhs === d9 && result === d5 && rest === d1) ||
+
+    (lhs === d7 && rhs === d1 && result === d8 && rest === d0) ||
+    (lhs === d7 && rhs === d2 && result === d9 && rest === d0) ||
+    (lhs === d7 && rhs === d3 && result === d0 && rest === d1) ||
+    (lhs === d7 && rhs === d4 && result === d1 && rest === d1) ||
+    (lhs === d7 && rhs === d5 && result === d2 && rest === d1) ||
+    (lhs === d7 && rhs === d6 && result === d3 && rest === d1) ||
+    (lhs === d7 && rhs === d7 && result === d4 && rest === d1) ||
+    (lhs === d7 && rhs === d8 && result === d5 && rest === d1) ||
+    (lhs === d7 && rhs === d9 && result === d6 && rest === d1) ||
+
+    (lhs === d8 && rhs === d1 && result === d9 && rest === d0) ||
+    (lhs === d8 && rhs === d2 && result === d0 && rest === d1) ||
+    (lhs === d8 && rhs === d3 && result === d1 && rest === d1) ||
+    (lhs === d8 && rhs === d4 && result === d2 && rest === d1) ||
+    (lhs === d8 && rhs === d5 && result === d3 && rest === d1) ||
+    (lhs === d8 && rhs === d6 && result === d4 && rest === d1) ||
+    (lhs === d8 && rhs === d7 && result === d5 && rest === d1) ||
+    (lhs === d8 && rhs === d8 && result === d6 && rest === d1) ||
+    (lhs === d8 && rhs === d9 && result === d7 && rest === d1) ||
+
+    (lhs === d9 && rhs === d1 && result === d0 && rest === d1) ||
+    (lhs === d9 && rhs === d2 && result === d1 && rest === d1) ||
+    (lhs === d9 && rhs === d3 && result === d2 && rest === d1) ||
+    (lhs === d9 && rhs === d4 && result === d3 && rest === d1) ||
+    (lhs === d9 && rhs === d5 && result === d4 && rest === d1) ||
+    (lhs === d9 && rhs === d6 && result === d5 && rest === d1) ||
+    (lhs === d9 && rhs === d7 && result === d6 && rest === d1) ||
+    (lhs === d9 && rhs === d8 && result === d7 && rest === d1) ||
+    (lhs === d9 && rhs === d9 && result === d8 && rest === d1)
 }
 
-func subchiffre (lhs: Term, rhs: Term, result: Term) -> Goal {
-  return
-    (rhs === d0 && result === lhs) ||
-    (lhs === d1 && rhs === d1 && result === d0) ||
-    (lhs === d2 && rhs === d1 && result === d1) ||
-    (lhs === d3 && rhs === d1 && result === d2) ||
-    (lhs === d4 && rhs === d1 && result === d3) ||
-    (lhs === d5 && rhs === d1 && result === d4) ||
-    (lhs === d6 && rhs === d1 && result === d5) ||
-    (lhs === d7 && rhs === d1 && result === d6) ||
-    (lhs === d8 && rhs === d1 && result === d7) ||
-    (lhs === d9 && rhs === d1 && result === d8) ||
-    (lhs === d2 && rhs === d2 && result === d0) ||
-    (lhs === d3 && rhs === d2 && result === d1) ||
-    (lhs === d4 && rhs === d2 && result === d2) ||
-    (lhs === d5 && rhs === d2 && result === d3) ||
-    (lhs === d6 && rhs === d2 && result === d5) ||
-    (lhs === d7 && rhs === d1 && result === d6) ||
-    (lhs === d8 && rhs === d1 && result === d7) ||
-    (lhs === d9 && rhs === d1 && result === d8)
 
-}
+
 
 func reverseAcc (list: Term, acc: Term, reversed: Term) -> Goal {
   return
@@ -286,7 +337,7 @@ func reverse (list: Term, reversed: Term) -> Goal {
   return reverseAcc (list: list, acc: List.empty, reversed: reversed)
 
 }
-
+//result est les successeur de lhs, ici on a definit une notion de successeur sur les chiffre 1 à 9
 func succ(lhs: Term, result: Term) -> Goal {
   return
     (lhs === d0 && result === d1) ||
@@ -296,19 +347,68 @@ func succ(lhs: Term, result: Term) -> Goal {
     })
 }
 
+func subchiffre(a: Term, b: Term, result: Term) -> Goal{
+  return
+    (b === d0 && result === a) ||
+    delayed ( freshn { l in
+      let x = l ["x"]
+      let y = l ["y"]
+      return succ(lhs: x, result: a) && succ(lhs: y, result: b) && subchiffre(a: x, b: y, result: result)
+    })
+}
+//on se limite aux soustractions avec resultat positif donc il n'y a que le second parametre qui puisse etre nul
+func subnbr (lhs: Term, rhs: Term, result: Term) -> Goal {
+  return
+     (rhs === List.empty && result === lhs) ||
+     (rhs === lhs && result === d0) ||
+  delayed ( freshn { a in
+      let lhead = a ["lhead"]
+      let rhead = a ["rhead"]
+      let ltail = a ["ltail"]
+      let rtail = a ["rtail"]
+      let x = a ["x"]
+      let y = a ["y"]
+      let z = a ["z"]
+      let p = a ["p"]
+      let q = a ["q"]
+      let rec = a ["rec"]
+      //extraire 1er chiffre lhs
+      return lhs === List.cons (lhead, ltail) &&
+      //extraire 1er chiffre rhs
+      rhs === List.cons (rhead, rtail) &&
+      //on 10 et la tete du 2eme parametre
+      subchiffre(a: List.cons(d1, List.cons(d0, List.empty)), b: rhead, result: p) &&
+      //le resultat on additionne a la tete du premier parametre
+      addchiffre(lhs: lhead, rhs: p, result: z, rest: q) &&
+      //le reste de laddition qui precede , on aditionne a la queue du 1er parametre (retenue de laddition precedante)
+      addnbr (lhs: ltail, rhs: q, result: x) &&
+      //ajout de la  dizaine empruntee au depart, on donc 1 a la queue du 2eme parametre
+      addnbr(lhs: rtail, rhs: List.cons (d1, List.empty), result: y) &&
+      //puis on soustrait  recurssivemen les nouvelle "queue" : x et y
+      subnbr (lhs: x, rhs: y, result: rec) &&
+
+      //retourne le resultat
+      result === List.cons (z, rec)
+
+  })
+}
+
 func mult(lhs: Term, rhs: Term, result: Term) -> Goal {
   return
     (rhs === d0 && result === d0) ||
     (rhs === d1 && result === lhs) ||
     delayed ( freshn { l in
-      let inv = l ["inv"]
       let r = l ["r"]
       let x = l ["x"]
-      let y = l ["y"]
-      return reverse(list: lhs, reversed: inv) && addnbr(lhs: inv, rhs: inv, result: r) &&
-      reverse(list: r, reversed: y) && succ(lhs: x, result: rhs) && mult(lhs: y, rhs: x, result: result)
+      return addnbr(lhs: lhs, rhs: result, result: r) &&
+      succ(lhs: x, result: rhs) && mult(lhs: lhs, rhs: x, result: r)
     })
   }
+//on traite seulement le cas ou le diviseur nest pas 0
+//func div(nbre: Term, diviseur: Term, result: Term, rest: Term) -> Goal{
+
+//}
+
 
 func addnbr (lhs: Term, rhs: Term, result: Term) -> Goal {
   return (lhs === List.empty && result === rhs ) ||
@@ -353,19 +453,14 @@ func evalArithmetic (input: Term, output: Term) -> Goal {
           (input === add (l, r) &&
           reverse (list: l, reversed: lv) && reverse (list: r, reversed: rv) &&
           addnbr (lhs: lv, rhs: rv, result: output)) ||
-          (input === multiply(l, r) &&
-           mult(lhs: l, rhs: r, result: output))
+          (input === multiply(l, r) && reverse (list: l, reversed: lv) &&
+           mult(lhs: lv, rhs: r, result: output)) ||
+           (input === subtract(l, r) &&
+            subnbr(lhs: l, rhs: r, result: output))
 
       })
 
-  //return freshn {t in
-  //let reserved_lhs = t ["reserved_lhs"]
-  //let reserved_rhs = t ["reserved_rhs"]
-  //return reverse (lhs, reversed_lhs) &&
-         //reverse (rhs, reversed_rhs) &&
-         //addnbr (lhs, rhs, output)
-       //}
-//}
+
 
     //assert (false)
 }
