@@ -22,6 +22,13 @@ You **must** add tests!
 
 ## Grade
 
+* Have you done something? yes
+* Does your code compile? yes
+* Do your tests succeeds? yes
+* Have you added more tests? no
+* Do the automatic tests succeed? no
+* Have you written the semantics as inference rules? no, but comments
+
 | Grade |
 | ----- |
-|       |
+|  3.5  |
